@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 3,
-    "passes": 3,
+    "suites": 6,
+    "tests": 8,
+    "passes": 8,
     "pending": 0,
     "failures": 0,
     "start": "2023-01-16T10:14:09.865Z",
-    "end": "2023-01-16T10:14:26.836Z",
-    "duration": 4520,
-    "testsRegistered": 3,
+    "end": "2023-01-19T06:38:58.880Z",
+    "duration": 14156,
+    "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -138,6 +138,257 @@
           "pending": [],
           "skipped": [],
           "duration": 1725,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6f397272-f7e7-4ceb-a922-8e60968caf7e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Api.cy.js",
+      "file": "cypress\\e2e\\Api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5714759d-501b-4050-bb72-129951692cc5",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Json Object Examples",
+              "fullTitle": "JSON Object Json Object Examples",
+              "timedOut": null,
+              "duration": 60,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
+              "err": {},
+              "uuid": "0c180b92-4479-422c-b1b8-3351320cf397",
+              "parentUUID": "5714759d-501b-4050-bb72-129951692cc5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c180b92-4479-422c-b1b8-3351320cf397"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 60,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "973d208e-bbbe-4c2d-8a65-eb5fbb80ce63",
+      "title": "",
+      "fullFile": "cypress\\e2e\\EndToEnd.cy.js",
+      "file": "cypress\\e2e\\EndToEnd.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "435f93d1-909a-4278-9de5-5ee7605a7f4e",
+          "title": "EndToEnd",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "E2E",
+              "fullTitle": "EndToEnd E2E",
+              "timedOut": null,
+              "duration": 4603,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type('Praveen');\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
+              "err": {},
+              "uuid": "d94190df-2b00-4acf-b3d1-8d226cf02d7a",
+              "parentUUID": "435f93d1-909a-4278-9de5-5ee7605a7f4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d94190df-2b00-4acf-b3d1-8d226cf02d7a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4603,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8dafccb9-4a8e-47a1-81ec-f61f3cbfbe9a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "positivelogin",
+              "fullTitle": "login positivelogin",
+              "timedOut": null,
+              "duration": 1640,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
+              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "negativelogin",
+              "fullTitle": "login negativelogin",
+              "timedOut": null,
+              "duration": 1345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5",
+              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
+            "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2985,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5c614ea9-6273-411b-83fe-eb30fe28249e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Thinkbridge.feature",
+      "file": "cypress\\e2e\\Thinkbridge.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a8f82655-b652-4cac-9925-baf2df57488b",
+          "title": "Login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using positive case",
+              "fullTitle": "Login page Login using positive case",
+              "timedOut": null,
+              "duration": 1988,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "86493a82-1f64-4ae5-b275-8a9ac23b312d",
+              "parentUUID": "a8f82655-b652-4cac-9925-baf2df57488b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86493a82-1f64-4ae5-b275-8a9ac23b312d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1988,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

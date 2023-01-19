@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-19T06:38:33.126Z",
+    "end": "2023-01-19T06:38:38.410Z",
+    "duration": 5284,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8dafccb9-4a8e-47a1-81ec-f61f3cbfbe9a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "positivelogin",
+              "fullTitle": "login positivelogin",
+              "timedOut": null,
+              "duration": 1640,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
+              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "negativelogin",
+              "fullTitle": "login negativelogin",
+              "timedOut": null,
+              "duration": 1345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5",
+              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
+            "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2985,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

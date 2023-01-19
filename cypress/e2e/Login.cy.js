@@ -1,6 +1,6 @@
 import { login_button, login_password, login_user } from "../support/locator"
 
-describe('login', () => {
+describe('LoginTC', () => {
     it('positivelogin', () => {
       cy.visit('https://www.saucedemo.com/')
       cy.get(login_user).type('standard_user')
