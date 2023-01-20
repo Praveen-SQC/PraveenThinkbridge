@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headless": "npx cypress run --config pageLoadTimeout=100000",
     "triggerAllTests-headed": "npx cypress run --headed",
-    "triggerAllTests-chrome": "npx cypress run --browser chrome"
+    "triggerAllTests-chrome": "npx cypress run --browser chrome",
+    "triggerAllTests-dashboard":"npx cypress run --record --key df7f965e-ac2c-48b0-b493-8f20330be154"
   },
   "devDependencies": {
     "cypress": "^12.3.0",
@@ -16,5 +17,8 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
     "stepDefinitions": "cypress/support/step_definitions"
+  },
+  "dependencies": {
+    "random-email": "^1.0.3"
   }
 }

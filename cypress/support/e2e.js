@@ -18,5 +18,7 @@ import './commands'
 
 /// <reference types="cypress"/>
 
+var randomEmail = require('random-email');
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

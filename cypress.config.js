@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const cucumber = require('cypress-cucumber-preprocessor').default;
 
 module.exports = defineConfig({
+  projectId: "c8j6fr",
    "chromeWebSecurity": false,
     reporter: 'cypress-multi-reporters',
     reporterOptions: {
