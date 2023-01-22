@@ -11,7 +11,8 @@ describe('EndToEnd', () => {
       cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
       cy.get('.shopping_cart_link').click()
       cy.get('[data-test="checkout"]').click()
-      cy.get('[data-test="firstName"]').type(randomEmail({ domain: 'gmail.com' }));
+      cy.get('[data-test="firstName"]').type(randomEmail({ domain: 'outlook.com' }));
+      cy.wait(10000);
       cy.get('[data-test="lastName"]').type('Nandakumar')
       cy.get('[data-test="postalCode"]').type('641039')
       cy.get('[data-test="continue"]').click()

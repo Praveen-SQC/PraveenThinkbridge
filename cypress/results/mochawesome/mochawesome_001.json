@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-16T10:14:14.452Z",
-    "end": "2023-01-16T10:14:19.223Z",
-    "duration": 4771,
+    "start": "2023-01-21T07:24:59.733Z",
+    "end": "2023-01-21T07:25:16.486Z",
+    "duration": 16753,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "d6f22c7b-609e-49d3-b644-6b53e9afe888",
+      "uuid": "9d02bc87-64aa-4e13-ad09-db9461f42188",
       "title": "",
-      "fullFile": "cypress\\e2e\\endToEnd.cy.js",
-      "file": "cypress\\e2e\\endToEnd.cy.js",
+      "fullFile": "cypress\\e2e\\EndToEnd.cy.js",
+      "file": "cypress\\e2e\\EndToEnd.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "72a22eac-7aaa-4cb0-bf7c-8761b52e2368",
-          "title": "Login",
+          "uuid": "7f2b07d9-834e-413e-98e3-e072cff8e86e",
+          "title": "EndToEnd",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "E2E",
-              "fullTitle": "Login E2E",
+              "fullTitle": "EndToEnd E2E",
               "timedOut": null,
-              "duration": 2795,
+              "duration": 14035,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type('Praveen');\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
+              "code": "//var randomEmail = require('random-email');\ncy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type(randomEmail({\n  domain: 'outlook.com'\n}));\ncy.wait(10000);\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
               "err": {},
-              "uuid": "c89f2bef-0932-436e-bd58-e32fba977a2a",
-              "parentUUID": "72a22eac-7aaa-4cb0-bf7c-8761b52e2368",
+              "uuid": "7324a5cd-0e9f-4b7f-b24b-0677b549b4e3",
+              "parentUUID": "7f2b07d9-834e-413e-98e3-e072cff8e86e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c89f2bef-0932-436e-bd58-e32fba977a2a"
+            "7324a5cd-0e9f-4b7f-b24b-0677b549b4e3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2795,
+          "duration": 14035,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

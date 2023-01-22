@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 6,
-    "tests": 8,
-    "passes": 8,
+    "suites": 12,
+    "tests": 15,
+    "passes": 15,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-16T10:14:09.865Z",
-    "end": "2023-01-19T06:38:58.880Z",
-    "duration": 14156,
-    "testsRegistered": 8,
+    "start": "2023-01-21T07:24:56.395Z",
+    "end": "2023-01-21T07:46:49.727Z",
+    "duration": 52486,
+    "testsRegistered": 15,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,200 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d6f22c7b-609e-49d3-b644-6b53e9afe888",
-      "title": "",
-      "fullFile": "cypress\\e2e\\endToEnd.cy.js",
-      "file": "cypress\\e2e\\endToEnd.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "72a22eac-7aaa-4cb0-bf7c-8761b52e2368",
-          "title": "Login",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "E2E",
-              "fullTitle": "Login E2E",
-              "timedOut": null,
-              "duration": 2795,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type('Praveen');\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
-              "err": {},
-              "uuid": "c89f2bef-0932-436e-bd58-e32fba977a2a",
-              "parentUUID": "72a22eac-7aaa-4cb0-bf7c-8761b52e2368",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "c89f2bef-0932-436e-bd58-e32fba977a2a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2795,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "fa883e77-f9e8-4298-a9e4-d6ee86fe54b2",
-      "title": "",
-      "fullFile": "cypress\\e2e\\login.cy.js",
-      "file": "cypress\\e2e\\login.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "d79c0e8b-2c62-413f-bc30-09f4c8d696fd",
-          "title": "login",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "positive",
-              "fullTitle": "login positive",
-              "timedOut": null,
-              "duration": 883,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
-              "err": {},
-              "uuid": "4e83de79-a4d6-49c4-a07e-ea4afc5bc5ba",
-              "parentUUID": "d79c0e8b-2c62-413f-bc30-09f4c8d696fd",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "negativelogin",
-              "fullTitle": "login negativelogin",
-              "timedOut": null,
-              "duration": 842,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
-              "err": {},
-              "uuid": "a2dabb61-cb02-4cd6-9626-4483c990e9a6",
-              "parentUUID": "d79c0e8b-2c62-413f-bc30-09f4c8d696fd",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "4e83de79-a4d6-49c4-a07e-ea4afc5bc5ba",
-            "a2dabb61-cb02-4cd6-9626-4483c990e9a6"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 1725,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "6f397272-f7e7-4ceb-a922-8e60968caf7e",
-      "title": "",
-      "fullFile": "cypress\\e2e\\Api.cy.js",
-      "file": "cypress\\e2e\\Api.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "5714759d-501b-4050-bb72-129951692cc5",
-          "title": "JSON Object",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Json Object Examples",
-              "fullTitle": "JSON Object Json Object Examples",
-              "timedOut": null,
-              "duration": 60,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
-              "err": {},
-              "uuid": "0c180b92-4479-422c-b1b8-3351320cf397",
-              "parentUUID": "5714759d-501b-4050-bb72-129951692cc5",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "0c180b92-4479-422c-b1b8-3351320cf397"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 60,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "973d208e-bbbe-4c2d-8a65-eb5fbb80ce63",
+      "uuid": "9d02bc87-64aa-4e13-ad09-db9461f42188",
       "title": "",
       "fullFile": "cypress\\e2e\\EndToEnd.cy.js",
       "file": "cypress\\e2e\\EndToEnd.cy.js",
@@ -220,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "435f93d1-909a-4278-9de5-5ee7605a7f4e",
+          "uuid": "7f2b07d9-834e-413e-98e3-e072cff8e86e",
           "title": "EndToEnd",
           "fullFile": "",
           "file": "",
@@ -231,29 +38,29 @@
               "title": "E2E",
               "fullTitle": "EndToEnd E2E",
               "timedOut": null,
-              "duration": 4603,
+              "duration": 14035,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type('Praveen');\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
+              "code": "//var randomEmail = require('random-email');\ncy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type(randomEmail({\n  domain: 'outlook.com'\n}));\ncy.wait(10000);\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
               "err": {},
-              "uuid": "d94190df-2b00-4acf-b3d1-8d226cf02d7a",
-              "parentUUID": "435f93d1-909a-4278-9de5-5ee7605a7f4e",
+              "uuid": "7324a5cd-0e9f-4b7f-b24b-0677b549b4e3",
+              "parentUUID": "7f2b07d9-834e-413e-98e3-e072cff8e86e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d94190df-2b00-4acf-b3d1-8d226cf02d7a"
+            "7324a5cd-0e9f-4b7f-b24b-0677b549b4e3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4603,
+          "duration": 14035,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -269,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "8dafccb9-4a8e-47a1-81ec-f61f3cbfbe9a",
+      "uuid": "3b6aca54-5e19-41d6-b1cb-72d63ca45ad8",
       "title": "",
       "fullFile": "cypress\\e2e\\Login.cy.js",
       "file": "cypress\\e2e\\Login.cy.js",
@@ -278,8 +85,8 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
-          "title": "login",
+          "uuid": "6b58d640-9540-4177-8fb2-7e8a257cb493",
+          "title": "LoginTC",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -287,9 +94,9 @@
           "tests": [
             {
               "title": "positivelogin",
-              "fullTitle": "login positivelogin",
+              "fullTitle": "LoginTC positivelogin",
               "timedOut": null,
-              "duration": 1640,
+              "duration": 1166,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -298,16 +105,16 @@
               "context": null,
               "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
               "err": {},
-              "uuid": "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
-              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "uuid": "836b7f63-98fe-4dbf-baf2-2e240ad7b7b3",
+              "parentUUID": "6b58d640-9540-4177-8fb2-7e8a257cb493",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "negativelogin",
-              "fullTitle": "login negativelogin",
+              "fullTitle": "LoginTC negativelogin",
               "timedOut": null,
-              "duration": 1345,
+              "duration": 1020,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -316,21 +123,21 @@
               "context": null,
               "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
               "err": {},
-              "uuid": "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5",
-              "parentUUID": "f0170cc7-e957-4889-8025-c2e8cc4b1198",
+              "uuid": "d0ba1e37-540a-4eb4-abc6-0c52209f7db1",
+              "parentUUID": "6b58d640-9540-4177-8fb2-7e8a257cb493",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bcc926a2-cd14-4b1d-b997-fb7e9833df42",
-            "f099f7d7-0b8f-4dfd-b14f-ebc6285b9df5"
+            "836b7f63-98fe-4dbf-baf2-2e240ad7b7b3",
+            "d0ba1e37-540a-4eb4-abc6-0c52209f7db1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2985,
+          "duration": 2186,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -346,7 +153,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "5c614ea9-6273-411b-83fe-eb30fe28249e",
+      "uuid": "e1931776-5678-4285-bcb0-a32cb70b4f70",
       "title": "",
       "fullFile": "cypress\\e2e\\Thinkbridge.feature",
       "file": "cypress\\e2e\\Thinkbridge.feature",
@@ -355,7 +162,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a8f82655-b652-4cac-9925-baf2df57488b",
+          "uuid": "88fdaedd-1624-4c7e-8155-f253fcf2b678",
           "title": "Login page",
           "fullFile": "",
           "file": "",
@@ -363,10 +170,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Login using positive case",
-              "fullTitle": "Login page Login using positive case",
+              "title": "Login into swaglabs",
+              "fullTitle": "Login page Login into swaglabs",
               "timedOut": null,
-              "duration": 1988,
+              "duration": 1179,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -375,20 +182,580 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "86493a82-1f64-4ae5-b275-8a9ac23b312d",
-              "parentUUID": "a8f82655-b652-4cac-9925-baf2df57488b",
+              "uuid": "df81e7d7-c937-4f8d-b097-072fe43c87bf",
+              "parentUUID": "88fdaedd-1624-4c7e-8155-f253fcf2b678",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "86493a82-1f64-4ae5-b275-8a9ac23b312d"
+            "df81e7d7-c937-4f8d-b097-072fe43c87bf"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1988,
+          "duration": 1179,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "85b08f2e-ca37-40da-a5a0-aa19f08f77da",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Api.cy.js",
+      "file": "cypress\\e2e\\Api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e8c1311-0a70-4be0-8c92-6a7567011fa7",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Json Object Examples",
+              "fullTitle": "JSON Object Json Object Examples",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
+              "err": {},
+              "uuid": "cf9e0e01-e250-408c-b2d3-edda69bf0f5b",
+              "parentUUID": "1e8c1311-0a70-4be0-8c92-6a7567011fa7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf9e0e01-e250-408c-b2d3-edda69bf0f5b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 127,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8ef89340-91b7-40b2-a907-7809e2b27804",
+      "title": "",
+      "fullFile": "cypress\\e2e\\EndToEnd.cy.js",
+      "file": "cypress\\e2e\\EndToEnd.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "39615022-dea5-4467-a506-a4a963885586",
+          "title": "EndToEnd",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "E2E",
+              "fullTitle": "EndToEnd E2E",
+              "timedOut": null,
+              "duration": 13387,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//var randomEmail = require('random-email');\ncy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type(randomEmail({\n  domain: 'outlook.com'\n}));\ncy.wait(10000);\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
+              "err": {},
+              "uuid": "83c64d7c-347f-423f-998d-1d8dc6f71aea",
+              "parentUUID": "39615022-dea5-4467-a506-a4a963885586",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83c64d7c-347f-423f-998d-1d8dc6f71aea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13387,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "993ab994-f221-4537-9d5e-ac1a935f0c5a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f8c0dcbc-e9cd-43e1-ad15-d860a721d003",
+          "title": "LoginTC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "positivelogin",
+              "fullTitle": "LoginTC positivelogin",
+              "timedOut": null,
+              "duration": 1094,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "1f7b979a-9983-42e7-b79b-5bf37b546eca",
+              "parentUUID": "f8c0dcbc-e9cd-43e1-ad15-d860a721d003",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "negativelogin",
+              "fullTitle": "LoginTC negativelogin",
+              "timedOut": null,
+              "duration": 1021,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "4665a99a-cc37-4059-944b-00183bd39fc7",
+              "parentUUID": "f8c0dcbc-e9cd-43e1-ad15-d860a721d003",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f7b979a-9983-42e7-b79b-5bf37b546eca",
+            "4665a99a-cc37-4059-944b-00183bd39fc7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2115,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e842001d-85d3-4118-99fe-333d8c841964",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Thinkbridge.feature",
+      "file": "cypress\\e2e\\Thinkbridge.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f32aa147-37a0-4e2b-9ce2-44c0065cf80a",
+          "title": "Login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login into swaglabs",
+              "fullTitle": "Login page Login into swaglabs",
+              "timedOut": null,
+              "duration": 1918,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "41f317c7-2723-4800-a712-7a4faba61423",
+              "parentUUID": "f32aa147-37a0-4e2b-9ce2-44c0065cf80a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "41f317c7-2723-4800-a712-7a4faba61423"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1918,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "797ad49e-dc29-4bd5-8a0f-fd8ab8174353",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Api.cy.js",
+      "file": "cypress\\e2e\\Api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08aa62f6-250c-4e8c-a394-d0c15176a8d8",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Json Object Examples",
+              "fullTitle": "JSON Object Json Object Examples",
+              "timedOut": null,
+              "duration": 75,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
+              "err": {},
+              "uuid": "773117ae-0612-4dc8-8184-f1fc4b844bde",
+              "parentUUID": "08aa62f6-250c-4e8c-a394-d0c15176a8d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "773117ae-0612-4dc8-8184-f1fc4b844bde"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 75,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "02161c7b-7878-4751-8445-3b3a40aef834",
+      "title": "",
+      "fullFile": "cypress\\e2e\\EndToEnd.cy.js",
+      "file": "cypress\\e2e\\EndToEnd.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a6f933b-fe0b-41d6-9fc2-2d6300ac3116",
+          "title": "EndToEnd",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "E2E",
+              "fullTitle": "EndToEnd E2E",
+              "timedOut": null,
+              "duration": 13214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//var randomEmail = require('random-email');\ncy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();\ncy.get('[data-test=\"add-to-cart-sauce-labs-backpack\"]').click();\ncy.get('.shopping_cart_link').click();\ncy.get('[data-test=\"checkout\"]').click();\ncy.get('[data-test=\"firstName\"]').type(randomEmail({\n  domain: 'outlook.com'\n}));\ncy.wait(10000);\ncy.get('[data-test=\"lastName\"]').type('Nandakumar');\ncy.get('[data-test=\"postalCode\"]').type('641039');\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
+              "err": {},
+              "uuid": "0cd7e468-938c-41b1-8471-87e66132765d",
+              "parentUUID": "4a6f933b-fe0b-41d6-9fc2-2d6300ac3116",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0cd7e468-938c-41b1-8471-87e66132765d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13214,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "97671ef3-83d1-483f-8050-3fb283b54436",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26ed74f7-067d-45ec-981e-3dba71dd673b",
+          "title": "LoginTC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "positivelogin",
+              "fullTitle": "LoginTC positivelogin",
+              "timedOut": null,
+              "duration": 1117,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_sauce');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "ca484915-5130-4b6c-8c63-fed621a04efd",
+              "parentUUID": "26ed74f7-067d-45ec-981e-3dba71dd673b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "negativelogin",
+              "fullTitle": "LoginTC negativelogin",
+              "timedOut": null,
+              "duration": 1008,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get(_locator.login_user).type('standard_user');\ncy.get(_locator.login_password).type('secret_wrong');\ncy.get(_locator.login_button).click();",
+              "err": {},
+              "uuid": "e929d1e1-134f-436f-9078-5603385bbcfd",
+              "parentUUID": "26ed74f7-067d-45ec-981e-3dba71dd673b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ca484915-5130-4b6c-8c63-fed621a04efd",
+            "e929d1e1-134f-436f-9078-5603385bbcfd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2125,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "62c8158a-16e7-422d-b3f8-390a053a49c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Thinkbridge.feature",
+      "file": "cypress\\e2e\\Thinkbridge.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bb2d7f14-fc5c-4d88-8320-75543a49c7ca",
+          "title": "Login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login into swaglabs",
+              "fullTitle": "Login page Login into swaglabs",
+              "timedOut": null,
+              "duration": 2069,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "543a1523-d537-477f-a56e-5d694ac18b16",
+              "parentUUID": "bb2d7f14-fc5c-4d88-8320-75543a49c7ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "543a1523-d537-477f-a56e-5d694ac18b16"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2069,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e92d0c2e-4c65-4eef-8c9d-9abf533b1195",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Api.cy.js",
+      "file": "cypress\\e2e\\Api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a90c5f8f-cba5-4c96-847c-78bf8df28eca",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Json Object Examples",
+              "fullTitle": "JSON Object Json Object Examples",
+              "timedOut": null,
+              "duration": 56,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
+              "err": {},
+              "uuid": "16619d41-c5e7-4d4d-8d7b-e27949a7c6b4",
+              "parentUUID": "a90c5f8f-cba5-4c96-847c-78bf8df28eca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16619d41-c5e7-4d4d-8d7b-e27949a7c6b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 56,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

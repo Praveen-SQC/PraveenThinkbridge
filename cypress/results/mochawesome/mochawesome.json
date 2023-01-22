@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-16T10:14:09.865Z",
-    "end": "2023-01-16T10:14:09.866Z",
-    "duration": 1,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-01-21T07:24:56.395Z",
+    "end": "2023-01-21T07:24:56.482Z",
+    "duration": 87,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "e92d0c2e-4c65-4eef-8c9d-9abf533b1195",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Api.cy.js",
+      "file": "cypress\\e2e\\Api.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a90c5f8f-cba5-4c96-847c-78bf8df28eca",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Json Object Examples",
+              "fullTitle": "JSON Object Json Object Examples",
+              "timedOut": null,
+              "duration": 56,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var exampleObject = {\n  \"key\": \"Tim\",\n  \"key2\": \"Jones\"\n};\nvar exampleArrayOfValues = [\"Sophie\", \"Rose\", \"Howard\"];\nvar exampleArrayOfObject = [{\n  \"key\": \"luke\"\n}];\nvar newArray = [{\n  \"key\": \"Praveen\"\n}, {\n  \"key\": \"Cookie\"\n}];\nreturn newArray;\nnewArray.push(exampleArrayOfObject);\nvar users = {\n  \"firstName\": \"Joe\",\n  \"lastName\": \"Blogs\",\n  \"Age\": 30,\n  \"Students\": [{\n    \"firstName\": \"Jim\",\n    \"lastName\": \"Blogs2\"\n  }, {\n    \"firstName\": \"Sarah\",\n    \"lastName\": \"Parker\"\n  }]\n};\ncy.log(exampleObject[\"key\"]); //Tim\ncy.log(exampleObject[\"key2\"]); //Jones\ncy.log(exampleObject.key2); //Jones\ncy.log(exampleArrayOfValues[0]); //Sophie\ncy.log(exampleArrayOfValues[1]); //Rose\ncy.log(users.Students[0].lastName); //Blogs2\ncy.log(exampleArrayOfObject);\ncy.log();",
+              "err": {},
+              "uuid": "16619d41-c5e7-4d4d-8d7b-e27949a7c6b4",
+              "parentUUID": "a90c5f8f-cba5-4c96-847c-78bf8df28eca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16619d41-c5e7-4d4d-8d7b-e27949a7c6b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 56,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {
