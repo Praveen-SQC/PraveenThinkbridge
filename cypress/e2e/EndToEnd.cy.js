@@ -12,11 +12,15 @@ describe('EndToEnd', () => {
       cy.get('.shopping_cart_link').click()
       cy.get('[data-test="checkout"]').click()
       cy.get('[data-test="firstName"]').type(randomEmail({ domain: 'outlook.com' }));
-      cy.wait(10000);
-      cy.get('[data-test="lastName"]').type('Nandakumar')
+      
+      cy.get('[data-test="lastName"]').type('praveen')
+      cy.wait(5000);
       cy.get('[data-test="postalCode"]').type('641039')
       cy.get('[data-test="continue"]').click()
       cy.get('[data-test="finish"]').click()
       cy.get('.complete-header').should('have.text','THANK YOU FOR YOUR ORDER')
   })
+
+  /* ==== Test Created with Cypress Studio ==== */
+  
 })

@@ -6,7 +6,7 @@ module.exports = defineConfig({
    "chromeWebSecurity": false,
    experimentalSessionAndOrigin: true,
     defaultCommandTimeout: 10000,
-    pageLoadTimeout: 120000,
+    pageLoadTimeout: 100000,
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     video: true,
@@ -23,6 +23,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       on('file:preprocessor', cucumber())
     },
-    specPattern : "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
+    specPattern : "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
+    experimentalStudio: true
   }, 
 });
